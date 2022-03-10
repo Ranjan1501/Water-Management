@@ -2,9 +2,10 @@
   "name": "water-management",
   "version": "1.0.0",
   "description": "",
-  "main": "Water_Management.js",
+  "main": "geektrust.js",
   "scripts": {
-    "start": "nodemon Water_Management.js"
+    "start": "node geektrust.js",
+    "test": "mocha"
   },
   "dependencies": {
     "dotenv": "^16.0.0",
