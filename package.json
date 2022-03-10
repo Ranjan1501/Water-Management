@@ -1,0 +1,25 @@
+{
+  "name": "water-management",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Water_Management.js",
+  "scripts": {
+    "start": "nodemon Water_Management.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mocha": "^6.2.0",
+    "mongoose": "^6.2.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaidev3/watermanagement_backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaidev3/watermanagement_backend/issues"
+  },
+  "homepage": "https://github.com/jaidev3/watermanagement_backend#readme"
+}
