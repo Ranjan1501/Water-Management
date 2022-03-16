@@ -12,7 +12,7 @@ app.listen(port, () => {
 let guest = 0;
 
 // Add Guest Route
-app.get("/guest", (req, res) => {
+app.post("/guest", (req, res) => {
   guest += req.body.ADD_GUESTS;
   return res.json({ totalGuest: guest });
 });
