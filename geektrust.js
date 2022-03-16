@@ -1,3 +1,6 @@
+const fs = require("fs");
+let data = fs.readFileSync("input1.txt");
+
 let consumptionPerPerson;
 let unitCost;
 let waterConsumedByGuest = 0;
@@ -95,7 +98,7 @@ BILL
   process.stdin.on("end", function () {
     read = read.replace(/\n$/, "");
     read = read.replace(/\n$/, "");
-    runProgram(read);
+    runProgram(data);
   });
   process.on("SIGINT", function () {
     read = read.replace(/\n$/, "");
