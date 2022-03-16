@@ -52,7 +52,7 @@ function getBill() {
     unitCost * corporationWater +
     unitCost * borewellWater +
     waterConsumedByGuest;
-  totalWater = Math.round(totalWater);
+  totalWater = Math.floor(totalWater);
 
   //   console.log(unitCost, waterConsumedByGuest, borewellWater);
 
