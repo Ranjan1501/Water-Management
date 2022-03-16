@@ -82,8 +82,9 @@ function runProgram(input) {
 }
 
 let data;
-for (let i = 0; i < 5; i++) {
-  data = fs.readFileSync(`input${i + 1}.txt`).toString();
-  runProgram(data);
-}
+// console.log(argv);
+
+data = fs.readFileSync(process.argv[2]).toString();
+runProgram(data);
+
 // console.log(data);
