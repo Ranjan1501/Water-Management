@@ -1,5 +1,5 @@
 const fs = require("fs");
-let data = fs.readFileSync("input1.txt");
+let data = fs.readFileSync("input1.txt").toString();
 
 let consumptionPerPerson;
 let unitCost;
@@ -81,28 +81,6 @@ function runProgram(input) {
     }
   }
 }
-if (process.env.USERNAME === "Ranjan Pro") {
-  runProgram(`
-    ALLOT_WATER 3 2:1
-ADD_GUESTS 4
-ADD_GUESTS 1
-BILL
-  `);
-} else {
-  process.stdin.resume();
-  process.stdin.setEncoding("ascii");
-  let read = "";
-  process.stdin.on("data", function (input) {
-    read += input;
-  });
-  process.stdin.on("end", function () {
-    read = read.replace(/\n$/, "");
-    read = read.replace(/\n$/, "");
-    runProgram(data);
-  });
-  process.on("SIGINT", function () {
-    read = read.replace(/\n$/, "");
-    runProgram(read);
-    process.exit(0);
-  });
-}
+
+// console.log(data);
+runProgram(data);
