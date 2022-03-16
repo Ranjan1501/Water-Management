@@ -41,10 +41,9 @@ function getBill() {
   }
 
   //   console.log(unitCost, corporationWater, guestBill, borewellWater);
-  let totalBill =
-    Math.floor(
-      unitCost * corporationWater * 1 + unitCost * borewellWater * 1.5
-    ) + guestBill;
+  let totalBill = Math.ceil(
+    unitCost * corporationWater * 1 + unitCost * borewellWater * 1.5 + guestBill
+  );
 
   //   console.log(guestBill);
 
@@ -52,7 +51,7 @@ function getBill() {
     unitCost * corporationWater +
     unitCost * borewellWater +
     waterConsumedByGuest;
-  totalWater = Math.floor(totalWater);
+  totalWater = Math.round(totalWater);
 
   //   console.log(unitCost, waterConsumedByGuest, borewellWater);
 
