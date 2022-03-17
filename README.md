@@ -41,3 +41,16 @@ Costs
 7. Allotment based on ratio is done only once at the start of the month.
 8. Guests can be added a multiple number of times.
 9. The command BILL can be executed only once, which is at the end of the month. It should be a part of the input set.
+      
+      <br> 
+ ## Result:- 
+      <img width="618" alt="Img1" src="https://user-images.githubusercontent.com/91541289/158745807-589ec606-3be4-4eb6-a0f2-85f25a567c94.png">
+      
+      <br> 
+      <img width="641" alt="Img2" src="https://user-images.githubusercontent.com/91541289/158745815-537b83cc-8994-4d21-ba09-d82c069c90cf.png">
+      
+      <br> 
+      
+      Result Demo: (https://www.geektrust.com/coding/evaluation/view-report/6229d89304c6d6e37a1d2403)
+      
+      
