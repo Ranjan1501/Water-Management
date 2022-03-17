@@ -6,7 +6,9 @@ let waterConsumedByGuest = 0;
 let corporationWater;
 let borewellWater;
 let guest = 0;
-function allotWater(apartmentType, corporationWater, borewellWater) {
+let data;
+
+let allotWater = (apartmentType, corporationWater, borewellWater) => {
   corporationWater = +corporationWater;
   borewellWater = +borewellWater;
   if (apartmentType == 2) {
@@ -16,14 +18,14 @@ function allotWater(apartmentType, corporationWater, borewellWater) {
   }
 
   unitCost = consumptionPerPerson / (corporationWater + borewellWater);
-}
+};
 
-function addGuest(addGuest) {
+let addGuest = (addGuest) => {
   guest += addGuest;
   waterConsumedByGuest = guest * 10 * 30;
-}
+};
 
-function getBill() {
+let getBill = () => {
   let guestBill = 0;
 
   if (waterConsumedByGuest > 0) {
@@ -41,6 +43,7 @@ function getBill() {
   }
 
   //   console.log(unitCost, corporationWater, guestBill, borewellWater);
+
   let totalBill = Math.ceil(
     unitCost * corporationWater * 1 + unitCost * borewellWater * 1.5 + guestBill
   );
@@ -56,12 +59,13 @@ function getBill() {
   //   console.log(unitCost, waterConsumedByGuest, borewellWater);
 
   return `${totalWater}  ${totalBill}`;
-}
+};
+
+// input taking for the problem
 
 function runProgram(input) {
   input = input.trim().split("\n");
-  //   let corporationWater;
-  //   let borewellWater;
+
   for (let i = 0; i < input.length; i++) {
     let inputType = input[i].trim().split(" ");
     // console.log(inputType);
@@ -80,7 +84,6 @@ function runProgram(input) {
   }
 }
 
-let data;
 // console.log(argv);
 
 data = fs.readFileSync(process.argv[2]).toString();
