@@ -43,14 +43,14 @@ Costs
 9. The command BILL can be executed only once, which is at the end of the month. It should be a part of the input set.
       <hr> 
        
- ### Result Snap:- 
-      <img width="600" alt="Img1" src="https://user-images.githubusercontent.com/91541289/158745807-589ec606-3be4-4eb6-a0f2-85f25a567c94.png">
-      
-      <br> 
-      <img width="600" alt="Img2" src="https://user-images.githubusercontent.com/91541289/158745815-537b83cc-8994-4d21-ba09-d82c069c90cf.png">
-      
-      <br> 
-      
-      Result Demo: (https://www.geektrust.com/coding/evaluation/view-report/6229d89304c6d6e37a1d2403)
+
+## Result and Score Snap
+
+![Screenshot 2023-09-02 at 12 19 37 PM](https://github.com/Ranjan1501/Water-Management/assets/91541289/51297932-d5a5-44d6-819e-d409520a2cc2)
+
+
+![Screenshot 2023-09-02 at 12 23 38 PM](https://github.com/Ranjan1501/Water-Management/assets/91541289/636094c5-2589-4855-822f-fa8109e7945a)
+
+
       
       
